@@ -48,6 +48,10 @@ public class CompanyEmp {
         this.homeAddress = homeAddress;
 
     }
+public int hashCode(){
+        String length=""+name.length()+homeAddress.length()+id+qualification.length();
+        return Integer.parseInt(length);
+}
 
     public boolean equals(Object e) {
         if (!(e instanceof CompanyEmp))
